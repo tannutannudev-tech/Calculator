@@ -1,3 +1,4 @@
+
 *{
     margin : 0;
     padding : 0;
@@ -11,10 +12,9 @@ body{
     align-items: center;
     padding : 20px;
     border : none;
-    margin : 20px;
     height : 100vh;
-
-    
+    background:#111827;
+       
 }
 
 .calculator{
@@ -22,19 +22,22 @@ body{
     padding : 20px;
     border-radius: 16px;
     background : transparent;
-    box-shadow: 0px 3px 15px rgbs(113 115,119, 0.5);
+    box-shadow: 0px 3px 15px rgba(113 115,119, 0.5);
+    width: 320px;
 }
 
 input{
-    width : 100%;
     border : none;
     padding : 10px;
-    margin : 10px;
     background : transparent;
     font-size: 40px;
     text-align: right;
-    box-shadow: 0px 3px 15px rgbs(64, 84, 84, 0.1);
+    box-shadow: 0px 3px 15px rgba(64, 84, 84, 0.1);
     cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    background : #374151;
+    color : white;
 }
 
 input::placeholder{
@@ -42,13 +45,42 @@ input::placeholder{
 }
 
 button{
+    display : grid;
     border : none;
     width : 60px;
     height : 60px;
     background : transparent;
-    border-radius: 50px;
-    font-size : 20px;
-    box-shadow : -8px 15px rgba(255, 255, 255, alpha 0.1);
-    cursor: pointer;
-    
+    font-size : 22px;
+    box-shadow : -8px-8px 15px rgba(255, 255, 255,  0.1);
+    cursor: pointer; 
+    background: #374151;
+    color:white; 
+    transition:0.2s;
+    border-radius:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.calculator div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+.btn-util{
+    background:#ef4444;
+}
+.btn-op{
+    background:#f59e0b;
+}
+.btn-eq{
+    background:#10b981;
+}
+button:active{
+    transform:scale(0.95);
 }
