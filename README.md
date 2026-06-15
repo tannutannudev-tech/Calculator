@@ -20,10 +20,10 @@ A simple and modern calculator built using HTML, CSS, and JavaScript.
 ## Project Structure
 
 calculator/
-├── index.html
-├── calculator_css.css
-├── calculator_js.js
-└── README.md
+index.html
+calculator_css.css
+calculator_js.js
+README.md
 
 ## How to Run
 
